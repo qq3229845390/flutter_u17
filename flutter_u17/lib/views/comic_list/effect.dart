@@ -49,5 +49,5 @@ void _onLoadData(Action action, Context<ComicListState> ctx) {
   );
 }
 void _onCellClick(Action action, Context<ComicListState> ctx) {
-  Navigator.of(ctx.context).pushNamed(Pages.COMICLIST, arguments: {'comicid': action.payload});
+  Navigator.of(ctx.context).pushNamed(Pages.COMICDETAIL, arguments: {'comicid': action.payload});
 }

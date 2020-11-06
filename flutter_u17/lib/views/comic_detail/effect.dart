@@ -21,7 +21,6 @@ void _init(Action action, Context<ComicDetailState> ctx) {
   TickerProvider tickerProvider = ctx.stfState as TickerProvider;
   ctx.state.tabController = TabController(length: 3, vsync: tickerProvider);
 
-
   HttpManager.instance.get(Api.detailStatic,
     params: {'comicid': ctx.state.comicid},
     success: (data) {
