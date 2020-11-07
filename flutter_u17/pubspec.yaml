@@ -62,6 +62,21 @@ flutter:
     - assets/images/tab_mine_S.png
     - assets/images/normal_placeholder_h.png
     - assets/images/normal_placeholder_v.png
+    - assets/images/mine_accout.png
+    - assets/images/mine_author.png
+    - assets/images/mine_bg_for_boy.png
+    - assets/images/mine_bg_for_girl.png
+    - assets/images/mine_cashew.png
+    - assets/images/mine_coin.png
+    - assets/images/mine_feedBack.png
+    - assets/images/mine_freed.png
+    - assets/images/mine_judge.png
+    - assets/images/mine_mail.png
+    - assets/images/mine_message.png
+    - assets/images/mine_seal.png
+    - assets/images/mine_setting.png
+    - assets/images/mine_subscript.png
+    - assets/images/mine_vip.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
