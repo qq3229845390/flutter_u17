@@ -32,7 +32,10 @@ class DetailConnector extends ConnOp<ComicDetailState, DetailState>
  with ReselectMixin {
   @override
   DetailState computed(ComicDetailState state) {
-    return DetailState();
+    return DetailState()
+      ..comic = state.staticEntity==null?null:state.staticEntity.comic
+      ..otherWorks = state.staticEntity==null?[]:state.staticEntity.otherWorks
+    ;
   }
 
   @override
