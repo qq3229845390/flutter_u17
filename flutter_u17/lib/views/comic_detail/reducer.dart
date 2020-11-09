@@ -8,6 +8,7 @@ Reducer<ComicDetailState> buildReducer() {
     <Object, Reducer<ComicDetailState>>{
       ComicDetailAction.action: _onAction,
       ComicDetailAction.initData: _initData,
+      ComicDetailAction.initDataRealtime: _initDataRealtime,
     },
   );
 }
@@ -19,4 +20,8 @@ ComicDetailState _onAction(ComicDetailState state, Action action) {
 
 ComicDetailState _initData(ComicDetailState state, Action action) {
   return state.clone()..staticEntity = action.payload;
+}
+
+ComicDetailState _initDataRealtime(ComicDetailState state, Action action) {
+  return state.clone()..realtimeEntity = action.payload;
 }

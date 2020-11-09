@@ -1,0 +1,113 @@
+import 'package:flutter_u17/generated/json/base/json_convert_content.dart';
+import 'package:flutter_u17/generated/json/base/json_field.dart';
+
+class CommentEntity with JsonConvert<CommentEntity> {
+	String objectId;
+	String objectType;
+	String commentCount;
+	int pageCount;
+	List<CommantCommantList> commentList;
+	bool hasMore;
+	int page;
+	int serverNextPage;
+}
+
+class CommantCommantList with JsonConvert<CommantCommantList> {
+	@JSONField(name: "comment_id")
+	String commentId;
+	@JSONField(name: "parent_id")
+	String parentId;
+	@JSONField(name: "user_id")
+	int userId;
+	String content;
+	@JSONField(name: "create_time")
+	String createTime;
+	String floor;
+	@JSONField(name: "is_delete")
+	String isDelete;
+	@JSONField(name: "is_up")
+	String isUp;
+	@JSONField(name: "thread_id")
+	String threadId;
+	String ip;
+	@JSONField(name: "total_reply")
+	String totalReply;
+	@JSONField(name: "comment_from")
+	String commentFrom;
+	@JSONField(name: "is_lock")
+	String isLock;
+	dynamic color;
+	@JSONField(name: "reply_time")
+	String replyTime;
+	String cate;
+	@JSONField(name: "object_type")
+	String objectType;
+	@JSONField(name: "is_choice")
+	String isChoice;
+	@JSONField(name: "from_product")
+	String fromProduct;
+	@JSONField(name: "from_device_model")
+	String fromDeviceModel;
+	@JSONField(name: "chapter_id")
+	String chapterId;
+	@JSONField(name: "comic_id")
+	String comicId;
+	@JSONField(name: "praise_total")
+	String praiseTotal;
+	@JSONField(name: "comment_type")
+	String commentType;
+	@JSONField(name: "default_type")
+	String defaultType;
+	@JSONField(name: "ticket_id")
+	String ticketId;
+	@JSONField(name: "comic_author")
+	int comicAuthor;
+	@JSONField(name: "content_filter")
+	String contentFilter;
+	String ticketNum;
+	@JSONField(name: "gift_num")
+	int giftNum;
+	@JSONField(name: "gift_img")
+	String giftImg;
+	List<dynamic> imageList;
+	@JSONField(name: "vip_exp")
+	String vipExp;
+	@JSONField(name: "face_type")
+	String faceType;
+	String title;
+	String nickname;
+	@JSONField(name: "group_user")
+	String groupUser;
+	@JSONField(name: "group_admin")
+	String groupAdmin;
+	@JSONField(name: "group_author")
+	String groupAuthor;
+	String face;
+	String sex;
+	String exp;
+	@JSONField(name: "online_time")
+	String onlineTime;
+	@JSONField(name: "group_custom")
+	String groupCustom;
+	String id;
+	CommentCommentListLevel level;
+	@JSONField(name: "create_time_str")
+	String createTimeStr;
+	int likeState;
+	String likeCount;
+}
+
+class CommentCommentListLevel with JsonConvert<CommentCommentListLevel> {
+	int level;
+	@JSONField(name: "min_exp")
+	int minExp;
+	int max;
+	@JSONField(name: "exp_speed")
+	int expSpeed;
+	@JSONField(name: "album_size")
+	int albumSize;
+	@JSONField(name: "favorite_num")
+	int favoriteNum;
+	int wage;
+	int ticket;
+}

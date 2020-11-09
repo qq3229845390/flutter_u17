@@ -7,6 +7,7 @@ Reducer<CommentState> buildReducer() {
   return asReducer(
     <Object, Reducer<CommentState>>{
       CommentAction.action: _onAction,
+      CommentAction.updateComment: _updateComment,
     },
   );
 }
@@ -14,4 +15,8 @@ Reducer<CommentState> buildReducer() {
 CommentState _onAction(CommentState state, Action action) {
   final CommentState newState = state.clone();
   return newState;
+}
+
+CommentState _updateComment(CommentState state, Action action) {
+  return state.clone()..commentEntity = action.payload;
 }

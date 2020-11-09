@@ -60,15 +60,15 @@ Widget buildView(
                               color: Colors.white,
                               fontSize: 14
                           )),
-                          TextSpan(text: '1345', style: TextStyle(
+                          TextSpan(text: state.realtimeEntity.comic.clickTotal, style: TextStyle(
                               color: Colors.orange,
                               fontSize: 16
                           )),
-                          TextSpan(text: '万 收藏', style: TextStyle(
+                          TextSpan(text: ' 收藏', style: TextStyle(
                               color: Colors.white,
                               fontSize: 14
                           )),
-                          TextSpan(text: '268340', style: TextStyle(
+                          TextSpan(text: state.realtimeEntity.comic.favoriteTotal, style: TextStyle(
                               color: Colors.orange,
                               fontSize: 16
                           )),
